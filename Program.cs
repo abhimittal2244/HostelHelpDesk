@@ -74,26 +74,28 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.Zero
         };
     });
-//builder.WebHost.UseUrls("http://*:5000");
+builder.WebHost.UseUrls("http://*:5000");
 
 builder.Services.AddDbContext<HostelComplaintsDB>(options =>
     //options.UseSqlServer(builder.Configuration.GetConnectionString("con"))
     options.UseMySql(
-        builder.Configuration.GetConnectionString("con"), 
-        new MySqlServerVersion(new Version(8, 0, 41))
+        builder.Configuration.GetConnectionString("DefaultConnection"), 
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")),
+        mySqlOptions => mySqlOptions.EnableRetryOnFailure()
+        // new MySqlServerVersion(new Version(8, 0, 41))
     ));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+//     app.UseSwagger();
+//     app.UseSwaggerUI();
+// }
 // comment the above if block code and uncomment the below two lines before publishing for using it on old lenovo laptop
-//app.UseSwagger();
-//app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Comment the below line before publishing for using it on old lenovo laptop
 //app.UseHttpsRedirection();
@@ -102,10 +104,18 @@ if (app.Environment.IsDevelopment())
 app.UseCors();
 app.UseAuthorization();
 app.MapControllers();
-//using (var scope = app.Services.CreateScope())
-//{
-//    var db = scope.ServiceProvider.GetRequiredService<HostelComplaintsDB>();
-//    db.Database.Migrate();
-//}
+using (var scope = app.Services.CreateScope())
+{
+   var db = scope.ServiceProvider.GetRequiredService<HostelComplaintsDB>();
+   db.Database.Migrate();
+}
+
+
+// using (var scope = host.Services.CreateScope())
+// {
+//     var db = scope.ServiceProvider.GetRequiredService<HostelComplaintsDB>();
+//     db.Database.Migrate();
+// }
+// host.Run();
 
 app.Run();

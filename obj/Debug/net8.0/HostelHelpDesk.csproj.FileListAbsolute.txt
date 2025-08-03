@@ -274,10 +274,11 @@ C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHe.84790589.Up2Date
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.dll
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\refint\HostelHelpDesk.dll
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.pdb
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.genruntimeconfig.cache
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\ref\HostelHelpDesk.dll
+C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.sourcelink.json
+C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\bin\Debug\net8.0\API\appsettings.Docker.json
