@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-creds', url: 'https://github.com/abhimittal2244/HostelHelpDesk.git'
+                git branch: 'master', url: 'https://github.com/abhimittal2244/HostelHelpDesk.git'
             }
         }
 
