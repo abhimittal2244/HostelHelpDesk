@@ -12,19 +12,9 @@ namespace HostelHelpDesk.Application.Services
     public class JwtServices
     {
         private readonly IConfiguration _configuration;
-        private readonly TokenValidationParameters _tokenValidationParameters;
         public JwtServices(IConfiguration configuration)
         {
             _configuration = configuration;
-            _tokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true, // Validate token expiry
-                ValidIssuer = "yourIssuer",
-                ValidAudience = "yourAudience",
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("yourSecretKey"))
-            };
         }
 
         public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
@@ -58,54 +48,10 @@ namespace HostelHelpDesk.Application.Services
             var token = new JwtSecurityToken(
                 claims: claims,
                 signingCredentials: creds,
-                expires: DateTime.Now.AddMinutes(2));
+                expires: DateTime.Now.AddMinutes(10));
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
             return jwt;
         }
-
-        /*private readonly TokenValidationParameters _tokenValidationParameters;
-
-        public TokenService()
-        {
-            _tokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true, // Validate token expiry
-                ValidIssuer = "yourIssuer",
-                ValidAudience = "yourAudience",
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("yourSecretKey"))
-            };
-        }*/
-
-        public bool IsTokenValid(string token)
-        {
-            try
-            {
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var principal = tokenHandler.ValidateToken(token, _tokenValidationParameters, out var validatedToken);
-
-                // Check token expiry
-                if (validatedToken.ValidTo < DateTime.UtcNow)
-                {
-                    return false; // Token is expired
-                }
-
-                // Token is valid
-                return true;
-            }
-            catch (Exception)
-            {
-                // Token validation failed
-                return false;
-            }
-        }
-
-        //public async Task<IActionResult> Login(LoginDTO dto)
-        //{
-            
-        //}
-
 
     }
 }

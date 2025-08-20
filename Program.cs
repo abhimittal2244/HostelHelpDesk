@@ -117,5 +117,5 @@ using (var scope = app.Services.CreateScope())
 //     db.Database.Migrate();
 // }
 // host.Run();
-
+await DbSeeder.SeedAsync(app.Services);
 app.Run();

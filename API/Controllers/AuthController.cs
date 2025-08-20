@@ -23,14 +23,6 @@ namespace HostelHelpDesk.API.Controllers
             _auth = auth;
         }
 
-        //[HttpGet("Login")]
-        //public async Task<IActionResult> Login([FromBody] LoginDTO dto)
-        //{
-        //    return _auth.login(dto);
-        //}
-
-        //var email = User.FindFirstValue(ClaimTypes.Email);
-
         [HttpPost("UploadStudents"), Authorize(Roles = "Admin")]
         public async Task<IActionResult> UploadStudents(IFormFile file)
         {
@@ -309,6 +301,7 @@ namespace HostelHelpDesk.API.Controllers
             return Ok(request);
         }
 
+        /*
         [HttpPost("StudentLogin")]
         public async Task<IActionResult> StudentLogin([FromBody] LoginDTO dto)
         {
@@ -370,11 +363,28 @@ namespace HostelHelpDesk.API.Controllers
                 return BadRequest("Invaid Crediantials");
             }
             string token = _auth.CreateToken(admin.Email, Shared.Enums.Role.Admin.ToString());
-            /*if(_auth.IsTokenValid(token)) 
-            { 
-                return Ok(token);
+            //if(_auth.IsTokenValid(token)) 
+            //{ 
+            //    return Ok(token);
+            //}
+            //return BadRequest("Token Expired");
+            return Ok(new { token });
+        }
+        */
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO dto)
+        {
+            User? user = await _DB.Users.FirstOrDefaultAsync(x => x.Email == dto.Email);
+            if (user == null)
+            {
+                return BadRequest("User Not Found");
             }
-            return BadRequest("Token Expired");*/
+            if (!_auth.VerifyPassowrd(dto.Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return BadRequest("Incorrect Password");
+            }
+            string token = _auth.CreateToken(user.Email, user.Role.ToString());
             return Ok(new { token });
         }
     }

@@ -26,7 +26,16 @@ namespace HostelHelpDesk.API.Controllers
         [HttpGet("GetAllComplaint")]
         public async Task<IActionResult> GetAllComplaint()
         {
-            return Ok(await _DB.Complaints.ToListAsync());
+            var complaints = await _DB.Complaints
+                .Include(c => c.Caretaker)
+                .Include(c => c.Student)
+                .Include(c => c.Worker)
+                .Include(c => c.Hostel)
+                .Include(c => c.Room)
+                .Include(c => c.ComplaintType)
+                .Include(c => c.Timeslot)
+                .ToListAsync();
+            return Ok(complaints);
         }
 
         //[HttpGet("GetAllStudentComplaint")]
@@ -273,65 +282,95 @@ namespace HostelHelpDesk.API.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("GetAllCaretakerCompaint")]
-        public async Task<ActionResult<CaretakerComplaintsDto[]>> GetAllCaretakerCompaint(string email)
+        public async Task<ActionResult<CaretakerComplaintsDto[]>> GetAllCaretakerCompaint()
         {
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("Email not found in token");
             var caretaker = await _DB.Caretakers.FirstOrDefaultAsync(s => s.Email == email);
-            var complaints = await _DB.Complaints.Where(a => a.Worker.Id == caretaker.Id).ToListAsync();
-            List<CaretakerComplaintsDto> getCaretakerComplaints = new List<CaretakerComplaintsDto>();
-            foreach (var complaint in complaints)
-            {
-                var worker = await _DB.Workers.FirstOrDefaultAsync(c => c.Id == complaint.Worker.Id);
-                var stu = await _DB.Students.FirstOrDefaultAsync(c => c.Id == complaint.Student.Id);
-                var room = await _DB.Rooms.FirstOrDefaultAsync(x => x.Id == complaint.Room.Id);
-                var timeslot = await _DB.Timeslots.FindAsync(complaint.Timeslot.Id);
-                var comp = new CaretakerComplaintsDto()
-                {
-                    //complaintNo = complaint.ComplaintNo,
-                    worker = worker.FirstName,
-                    studentName = stu.FirstName,
-                    roomNo = room.RoomNo,
-                    description = complaint.Description,
-                    status = complaint.Status.ToString(),
-                    timeslot = timeslot.StartTime.ToString("HH:mm")
+                        var complaints = await _DB.Complaints
+                .Where(a => a.CaretakerId == caretaker.Id)
+                .Include(c => c.Worker)
+                .Include(c => c.Student)
+                .Include(c => c.Room)
+                .Include(c => c.Timeslot)
+                .ToListAsync();
 
-                };
-                getCaretakerComplaints.Add(comp);
-            }
+            var getCaretakerComplaints = complaints.Select(c => new CaretakerComplaintsDto
+            {
+                complaintNo = c.ComplaintNo,
+                worker = c.Worker?.FirstName,
+                studentName = c.Student?.FirstName,
+                roomNo = c.Room?.RoomNo,
+                description = c.Description,
+                status = c.Status.ToString(),
+                timeslot = $"{c.Timeslot?.StartTime.ToString("HH:mm")} - {c.Timeslot?.EndTime.ToString("HH:mm")}"
+            }).ToList();
+
+
             return Ok(getCaretakerComplaints);
         }
 
+        [Authorize]
         [HttpGet("GetAllWorkerCompaint")]
-        public async Task<ActionResult<WorkerComplaintsDto[]>> GetAllWorkerCompaint(string email)
+        public async Task<ActionResult<WorkerComplaintsDto[]>> GetAllWorkerCompaint()
         {
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("Email not found in token");
             var worker = await _DB.Workers.FirstOrDefaultAsync(s => s.Email == email);
-            var complaints = await _DB.Complaints.Where(a => a.Worker.Id == worker.Id).ToListAsync();
-            List<WorkerComplaintsDto> getWorkerComplaints = new List<WorkerComplaintsDto>();
-            foreach (var complaint in complaints)
+            var complaints = await _DB.Complaints
+                .Where(a => a.WorkerId == worker.Id)
+                .Include(c => c.Worker)
+                .Include(c => c.Student)
+                .Include(c => c.Hostel)
+                .Include(c => c.Room)
+                .Include(c => c.Timeslot)
+                .ToListAsync();
+
+            var getWorkerComplaints = complaints.Select(c => new WorkerComplaintsDto
             {
-                var hostel = await _DB.Hostels.FirstOrDefaultAsync(c => c.Id == complaint.Hostel.Id);
-                var stu = await _DB.Students.FirstOrDefaultAsync(c => c.Id == complaint.Student.Id);
-                var room = await _DB.Rooms.FirstOrDefaultAsync(x => x.Id == complaint.Room.Id);
-                var timeslot = await _DB.Timeslots.FindAsync(complaint.Timeslot.Id);
-                var comp = new WorkerComplaintsDto()
-                {
-                    //complaintNo = complaint.ComplaintNo,
-                    hostelName = hostel.HostelName,
-                    studentName = stu.FirstName,
-                    roomNo = room.RoomNo,
-                    description = complaint.Description,
-                    status = complaint.Status.ToString(),
-                    timeslot = timeslot.StartTime.ToString("HH:mm")
-                };
-                getWorkerComplaints.Add(comp);
-            }
+                complaintNo = c.ComplaintNo,
+                studentName = c.Student?.FirstName,
+                hostelName = c.Hostel?.HostelName,
+                roomNo = c.Room?.RoomNo,
+                description = c.Description,
+                status = c.Status.ToString(),
+                timeslot = $"{c.Timeslot?.StartTime.ToString("HH:mm")} - {c.Timeslot?.EndTime.ToString("HH:mm")}"
+            }).ToList();
+            //var complaints = await _DB.Complaints.Where(a => a.Worker.Id == worker.Id).ToListAsync();
+            //List<WorkerComplaintsDto> getWorkerComplaints = new List<WorkerComplaintsDto>();
+            //foreach (var complaint in complaints)
+            //{
+            //    var hostel = await _DB.Hostels.FirstOrDefaultAsync(c => c.Id == complaint.Hostel.Id);
+            //    var stu = await _DB.Students.FirstOrDefaultAsync(c => c.Id == complaint.Student.Id);
+            //    var room = await _DB.Rooms.FirstOrDefaultAsync(x => x.Id == complaint.Room.Id);
+            //    var timeslot = await _DB.Timeslots.FindAsync(complaint.Timeslot.Id);
+            //    var comp = new WorkerComplaintsDto()
+            //    {
+            //        //complaintNo = complaint.ComplaintNo,
+            //        hostelName = hostel.HostelName,
+            //        studentName = stu.FirstName,
+            //        roomNo = room.RoomNo,
+            //        description = complaint.Description,
+            //        status = complaint.Status.ToString(),
+            //        timeslot = timeslot.StartTime.ToString("HH:mm")
+            //    };
+            //    getWorkerComplaints.Add(comp);
+            //}
             return Ok(getWorkerComplaints);
         }
 
+        [Authorize]
         [HttpPost("CreateComplaint")]
         public async Task<ActionResult<ComplaintResponseDto>> RaiseComplaintAsync(ComplaintRequestDto addComplaint)
         {
-            var created = await _complaintService.RaiseComplaintAsync(addComplaint);
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("Email not found in token");
+            var created = await _complaintService.RaiseComplaintAsync(email, addComplaint);
             return Ok(created);
         }
 

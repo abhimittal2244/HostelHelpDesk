@@ -95,40 +95,8 @@
   },
   {
     "ContainingType": "HostelHelpDesk.API.Controllers.AuthController",
-    "Method": "AdminLogin",
-    "RelativePath": "api/Auth/AdminLogin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "HostelHelpDesk.Application.DTO.LoginDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HostelHelpDesk.API.Controllers.AuthController",
-    "Method": "CaretakerLogin",
-    "RelativePath": "api/Auth/CaretakerLogin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "HostelHelpDesk.Application.DTO.LoginDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HostelHelpDesk.API.Controllers.AuthController",
-    "Method": "StudentLogin",
-    "RelativePath": "api/Auth/StudentLogin",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -190,22 +158,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HostelHelpDesk.API.Controllers.AuthController",
-    "Method": "WorkerLogin",
-    "RelativePath": "api/Auth/WorkerLogin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "HostelHelpDesk.Application.DTO.LoginDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "HostelHelpDesk.API.Controllers.ComplaintsController",
     "Method": "RaiseComplaintAsync",
     "RelativePath": "api/Complaints/CreateComplaint",
@@ -238,13 +190,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "HostelHelpDesk.Application.DTO.CaretakerComplaintsDto[]",
@@ -284,13 +230,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "HostelHelpDesk.Application.DTO.WorkerComplaintsDto[]",
@@ -430,6 +370,52 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "HostelHelpDesk.API.Controllers.DashboardController",
+    "Method": "GetHostelData",
+    "RelativePath": "api/Dashboard/GetHostelData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HostelHelpDesk.API.Controllers.DashboardController",
+    "Method": "ManageHostel",
+    "RelativePath": "api/Dashboard/ManageHostel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HostelHelpDesk.API.Controllers.DashboardController",
+    "Method": "ManageRoom",
+    "RelativePath": "api/Dashboard/ManageRoom/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HostelHelpDesk.API.Controllers.DashboardController",
+    "Method": "ManageTimeslot",
+    "RelativePath": "api/Dashboard/ManageTimeslot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HostelHelpDesk.API.Controllers.HostelController",

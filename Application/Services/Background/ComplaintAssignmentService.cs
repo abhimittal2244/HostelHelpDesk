@@ -45,18 +45,28 @@ namespace HostelHelpDesk.Application.Services.Background
                             .Select(w => w.Id)
                             .ToListAsync();
 
+                        //var availableWorker = await db.Workers
+                        //    .Include(w => w.WorkerSpecialization)
+                        //    .Where(w =>
+                        //        eligibleWorkerIds.Contains(w.Id) &&
+                        //        !db.Complaints.Any(c =>
+                        //            c.Worker.Id == w.Id &&
+                        //            c.TimeslotId == complaint.TimeslotId))
+                        //    .FirstOrDefaultAsync();
+
+                        // Find worker who has < 2 complaints in the same timeslot
                         var availableWorker = await db.Workers
                             .Include(w => w.WorkerSpecialization)
                             .Where(w =>
                                 eligibleWorkerIds.Contains(w.Id) &&
-                                !db.Complaints.Any(c =>
-                                    c.Worker.Id == w.Id &&
-                                    c.TimeslotId == complaint.TimeslotId))
+                                db.Complaints.Count(c => c.Worker.Id == w.Id && c.TimeslotId == complaint.TimeslotId) < 2
+                            )
                             .FirstOrDefaultAsync();
 
                         if (availableWorker != null)
                         {
                             complaint.Worker = availableWorker;
+                            complaint.Status = Shared.Enums.ComplaintStatus.ASSIGNED;
                             _logger.LogInformation($"Assigned complaint {complaint.ComplaintNo} to worker {availableWorker.Id}");
                         }
                     }

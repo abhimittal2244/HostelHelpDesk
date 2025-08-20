@@ -3,20 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\jwtservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\jwtservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\hostelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\hostelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\hostelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\hostelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\persistence\\data\\hostelcomplaintsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:persistence\\data\\hostelcomplaintsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\background\\complaintassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\background\\complaintassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\complaintscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\complaintscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\complaintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\complaintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\domain\\models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:domain\\models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\dto\\complaintrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\dto\\complaintrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\persistence\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:persistence\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\domain\\models\\workertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:domain\\models\\workertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\domain\\models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:domain\\models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\api\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:api\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|c:\\users\\mitta\\onedrive\\desktop\\hostelhelpdesk\\application\\services\\complainttypeworkertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0205E-4E39-4BB9-9B54-E5C323D310FB}|HostelHelpDesk.csproj|solutionrelative:application\\services\\complainttypeworkertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +98,245 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "API\\Controllers\\RoomController.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T08:22:19.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HostelController.cs",
               "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\HostelController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\HostelController.cs",
               "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\HostelController.cs",
               "RelativeToolTip": "API\\Controllers\\HostelController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T08:22:00.879Z",
+              "WhenOpened": "2025-08-20T12:19:39.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HostelService.cs",
-              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\HostelService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HostelService.cs",
-              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\HostelService.cs",
-              "RelativeToolTip": "Application\\Services\\HostelService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ComplaintAssignmentService.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\Background\\ComplaintAssignmentService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Background\\ComplaintAssignmentService.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\Background\\ComplaintAssignmentService.cs",
+              "RelativeToolTip": "Application\\Services\\Background\\ComplaintAssignmentService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwD0AAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T08:21:32.153Z",
+              "WhenOpened": "2025-08-19T20:44:13.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtServices.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\JwtServices.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\JwtServices.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\JwtServices.cs",
+              "RelativeToolTip": "Application\\Services\\JwtServices.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T18:45:05.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "ComplaintService.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\ComplaintService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ComplaintService.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\ComplaintService.cs",
+              "RelativeToolTip": "Application\\Services\\ComplaintService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwG0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:02:15.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-30T22:48:11.412Z",
+              "WhenOpened": "2025-08-19T18:43:00.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Complaint.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\Complaint.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Complaint.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\Complaint.cs",
+              "RelativeToolTip": "Domain\\Models\\Complaint.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvykAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T18:37:23.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T13:16:46.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\Worker.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Worker.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\Worker.cs",
+              "RelativeToolTip": "Domain\\Models\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T13:15:57.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComplaintsController.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\ComplaintsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ComplaintsController.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\ComplaintsController.cs",
+              "RelativeToolTip": "API\\Controllers\\ComplaintsController.cs",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAAwCQBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:32:14.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:32:04.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StudentResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\DTO\\StudentResponseDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\StudentResponseDto.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\DTO\\StudentResponseDto.cs",
+              "RelativeToolTip": "Application\\DTO\\StudentResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:24:05.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAEYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:20:59.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TimeslotService.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\TimeslotService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\TimeslotService.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\TimeslotService.cs",
+              "RelativeToolTip": "Application\\Services\\TimeslotService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:14:42.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TimeslotController.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\TimeslotController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\TimeslotController.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\TimeslotController.cs",
+              "RelativeToolTip": "API\\Controllers\\TimeslotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T12:13:11.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ComplaintRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\DTO\\ComplaintRequestDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\ComplaintRequestDto.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\DTO\\ComplaintRequestDto.cs",
+              "RelativeToolTip": "Application\\DTO\\ComplaintRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T10:09:33.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WorkerType.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\WorkerType.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\WorkerType.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Domain\\Models\\WorkerType.cs",
+              "RelativeToolTip": "Domain\\Models\\WorkerType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T20:47:01.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ComplaintTypeWorkerTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\ComplaintTypeWorkerTypeService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ComplaintTypeWorkerTypeService.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Application\\Services\\ComplaintTypeWorkerTypeService.cs",
+              "RelativeToolTip": "Application\\Services\\ComplaintTypeWorkerTypeService.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAUwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T20:35:51.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Persistence\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Persistence\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Persistence\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "Persistence\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAArwFkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T21:15:32.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HostelComplaintsDB.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Persistence\\Data\\HostelComplaintsDB.cs",
+              "RelativeDocumentMoniker": "Persistence\\Data\\HostelComplaintsDB.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\Persistence\\Data\\HostelComplaintsDB.cs",
+              "RelativeToolTip": "Persistence\\Data\\HostelComplaintsDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T20:09:22.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\mitta\\OneDrive\\Desktop\\HostelHelpDesk\\API\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "API\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T19:19:30.892Z",
               "EditorCaption": ""
             }
           ]

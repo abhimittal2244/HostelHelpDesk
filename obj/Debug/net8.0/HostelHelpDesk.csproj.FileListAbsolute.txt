@@ -282,3 +282,4 @@ C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.g
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\ref\HostelHelpDesk.dll
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\HostelHelpDesk.sourcelink.json
 C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\bin\Debug\net8.0\API\appsettings.Docker.json
+C:\Users\mitta\OneDrive\Desktop\HostelHelpDesk\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

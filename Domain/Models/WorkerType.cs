@@ -7,6 +7,6 @@
 
         public int ComplaintTypeId { get; set; }
         public ComplaintType ComplaintType { get; set; }
-
+        public ICollection<Worker> Workers { get; set; } = new List<Worker>();
     }
 }

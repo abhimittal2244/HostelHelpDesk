@@ -28,19 +28,54 @@ namespace HostelHelpDesk.API.Controllers
         [HttpGet("GetAllStudents"), Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllStudents()
         {
-            return Ok(await _DB.Students.ToListAsync());
+            var students = await _DB.Students.Include(h => h.Hostel).Include(r => r.Room)
+                .Select(s => new
+                {
+                    Email = s.Email,
+                    PhoneNumber = s.PhoneNumber,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    RollNo = s.RollNo,
+                    RoomNo = s.Room.RoomNo,
+                    HostelName = s.Hostel.HostelName
+
+                }).ToListAsync();
+
+            return Ok(students);
         }
         
         [HttpGet("GetAllWorers"), Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllWorers()
         {
-            return Ok(await _DB.Workers.ToListAsync());
+            var workers = await _DB.Workers
+                .Select(s => new
+                {
+                    Email = s.Email,
+                    PhoneNumber = s.PhoneNumber,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    WorkerSpecialization = s.WorkerSpecialization.ToArray(),
+
+                }).ToListAsync();
+
+            return Ok(workers);
         }
 
         [HttpGet("GetAllCaretakers"), Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllCaretakers()
         {
-            return Ok(await _DB.Caretakers.ToListAsync());
+            var caretakers = await _DB.Caretakers.Include(h => h.Hostel)
+                .Select(s => new
+                {
+                    Email = s.Email,
+                    PhoneNumber = s.PhoneNumber,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    HostelName = s.Hostel.HostelName
+
+                }).ToListAsync();
+
+            return Ok(caretakers);
         }
         
         [HttpGet("GetStudent"), Authorize(Roles = "Admin")]

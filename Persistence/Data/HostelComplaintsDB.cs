@@ -9,6 +9,7 @@ namespace HostelHelpDesk.Persistence.Data
         public HostelComplaintsDB(DbContextOptions<HostelComplaintsDB> options) : base(options)
         {
         }
+        public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Worker> Workers { get; set; }
         public DbSet<Caretaker> Caretakers { get; set; }

@@ -39,11 +39,11 @@ namespace HostelHelpDesk.Domain.Models
 
         public string? Description { get; set; }
 
-        public DateTime Created { get; set; } = DateTime.Now;
+        public DateTime Created { get; set; }
 
         public DateTime Completed { get; set; }
 
         //public string Status { get; set; } = ComplaintStatus.ComplaintStatusDesc.CS101.GetStatus();
-        public ComplaintStatus Status { get; set; } = ComplaintStatus.CREATED;
+        public ComplaintStatus Status { get; set; }
     }
 }

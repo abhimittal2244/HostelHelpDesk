@@ -73,13 +73,13 @@ namespace HostelHelpDesk.Application.Services
         //}
 
 
-        public async Task<ComplaintResponseDto> RaiseComplaintAsync(ComplaintRequestDto addComplaint)
+        public async Task<ComplaintResponseDto> RaiseComplaintAsync(string email, ComplaintRequestDto addComplaint)
         {
             // Validate student
             var stu = await _db.Students
                 .Include(s => s.Hostel)
                 .Include(s => s.Room)
-                .FirstOrDefaultAsync(s => s.Id == addComplaint.StudentId)
+                .FirstOrDefaultAsync(s => s.Email == email)
                 ?? throw new ArgumentException("Student not found");
 
             // Find caretaker for the hostel
@@ -106,7 +106,8 @@ namespace HostelHelpDesk.Application.Services
                 ComplaintType = complaintType,
                 Hostel = stu.Hostel,
                 Room = stu.Room,
-                //Status = ComplaintStatus.CREATED // assuming you have an enum
+                Created = DateTime.Now,
+                Status = ComplaintStatus.CREATED // assuming you have an enum
             };
 
             await _db.Complaints.AddAsync(complaint);
