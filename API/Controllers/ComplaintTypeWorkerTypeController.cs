@@ -17,35 +17,6 @@ namespace HostelHelpDesk.API.Controllers
             _service = service;
         }
 
-        /*
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ComplaintTypeWorkerTypeDto dto)
-        {
-            await _service.CreateComplaintTypeWorkerTypeAsync(dto);
-            return Ok("Data Uploaded");
-        }
-
-        [HttpGet("GetAllWorkerType")]
-        public async Task<IActionResult> GetAllWorkerTypes()
-        {
-            var result = await _service.GetAllWorkerTypesAsync();
-            return Ok(result);
-        }
-
-        [HttpGet("GetAllComplaintType")]
-        public async Task<IActionResult> GetAllComplaintType()
-        {
-            var result = await _service.GetAllComplaintTypesAsync();
-            return Ok(result);
-        }
-
-        [HttpGet("GetAllComplaintTypeWorkerType")]
-        public async Task<IActionResult> GetAllComplaintTypeWorkerType()
-        {
-            var result = await _service.GetAllComplaintTypeWorkerTypeAsync();
-            return Ok(result);
-        }
-        */
 
         [HttpGet("GetAllMappings"), Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<ComplaintTypeWorkerTypeDto>>> GetAllMappings()

@@ -9,13 +9,9 @@ using HostelHelpDesk.Application.DTO;
 
 namespace HostelHelpDesk.Application.Services
 {
-    public class JwtServices
+    public class JwtServices(IConfiguration configuration)
     {
-        private readonly IConfiguration _configuration;
-        public JwtServices(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
@@ -41,14 +37,16 @@ namespace HostelHelpDesk.Application.Services
             [
                 new Claim(ClaimTypes.Email, data),
                 new Claim(ClaimTypes.Role, role),
+
             ];
+            
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:Token").Value));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
             var token = new JwtSecurityToken(
                 claims: claims,
                 signingCredentials: creds,
-                expires: DateTime.Now.AddMinutes(10));
+                expires: DateTime.Now.AddMinutes(int.Parse(_configuration.GetSection("AppSettings:Expiration").Value)));
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
             return jwt;
         }
